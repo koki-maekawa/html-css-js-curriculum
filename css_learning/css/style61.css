@@ -250,3 +250,42 @@
   height: 50px;
   z-index: 1;
 }
+
+.pseudo-class-1:hover {
+  background-color: red;
+}
+
+.pseudo-class-2:focus {
+  background-color: red;
+}
+
+.pseudo-class-3 input:checked + label {
+  background-color: red;
+}
+
+.pseudo-class-4 p:first-child {
+  background-color: red;
+}
+
+.pseudo-class-5 p:first-of-type {
+  background-color: red;
+}
+
+.pseudo-class-6 p:last-child {
+  background-color: red;
+}
+
+.pseudo-class-7 p:not(:last-child) {
+  background-color: red;
+}
+
+.pseudo-class-8 p:nth-child(odd) {
+  background-color: red;
+}
+
+.pseudo-class-9 button:active {
+  color: red;
+}
+
+.pseudo-class-1 {
+}
