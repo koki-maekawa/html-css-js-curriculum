@@ -287,5 +287,12 @@
   color: red;
 }
 
-.pseudo-class-1 {
+.pseudo-element-1 span::after {
+  content: "after";
+  background-color: red;
+}
+
+.pseudo-element-2 span::before {
+  content: "before";
+  background-color: red;
 }
