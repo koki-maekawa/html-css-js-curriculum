@@ -1,0 +1,298 @@
+[class*="property"] {
+  margin: 4px;
+}
+
+.property-1 {
+  background-color: red;
+}
+
+.property-2 {
+  background-image: url("https://picsum.photos/200/80");
+}
+
+.property-3 {
+  background-image: url("https://picsum.photos/200/80");
+  background-attachment: fixed;
+}
+
+.property-4 {
+  background-image: url("https://picsum.photos/200/80");
+  background-position-x: right;
+  background-repeat: no-repeat;
+}
+
+.property-5 {
+  background-image: url("https://picsum.photos/200/80");
+  background-position-x: left;
+  background-repeat: no-repeat;
+}
+
+.property-6 {
+  background: center no-repeat url("https://picsum.photos/200/80");
+}
+
+.property-7 {
+  border-block-end: solid;
+}
+
+.property-8 {
+  border: red solid;
+}
+
+.property-9 {
+  border-left: solid;
+}
+
+.property-10 {
+  border-right: solid;
+}
+
+.property-11 {
+  border-top: solid;
+}
+
+.property-12 {
+  border: solid;
+}
+
+.property-13 {
+  border: 1rem solid;
+}
+
+.property-14 {
+  border: 1rem red solid;
+}
+
+.property-15 {
+  color: blue;
+}
+
+.property-16 {
+  cursor: help;
+}
+
+.property-17 p {
+  display: inline;
+}
+
+.property-18 {
+  background-color: red;
+  filter: blur(1px);
+}
+
+.property-19 {
+  float: right;
+}
+
+.property-20 {
+  float: right;
+  float: none;
+}
+
+.property-21 p {
+  font-family: "Gill Sans Extrabold", sans-serif;
+}
+
+.property-22 p {
+  font-size: 2rem;
+}
+
+.property-23 p {
+  font-weight: bold;
+}
+
+.property-24 p {
+  font: 2rem "Fira Sans", sans-serif;
+}
+
+.property-25 {
+  height: 150px;
+}
+
+.property-26 {
+  width: 80px;
+}
+
+.property-27 p {
+  letter-spacing: 5px;
+}
+
+.property-28 {
+  line-height: 2.5;
+}
+
+.property-29 {
+  list-style-image: url("https://picsum.photos/20/20");
+}
+
+.property-30 {
+  list-style-position: inside;
+}
+
+.property-31 {
+  list-style-type: circle;
+}
+
+.property-32 {
+  list-style: square;
+}
+
+.property-33 {
+  margin-bottom: 50px;
+  border: solid;
+}
+
+.property-34 {
+  margin-left: 50px;
+  border: solid;
+}
+
+.property-35 {
+  margin-right: 50px;
+  border: solid;
+}
+
+.property-36 {
+  margin-top: 50px;
+  border: solid;
+}
+
+.property-37 {
+  margin: 50px;
+  border: solid;
+}
+
+.property-38 {
+  padding-bottom: 50px;
+  border: solid;
+}
+
+.property-39 {
+  padding-left: 50px;
+  border: solid;
+}
+
+.property-40 {
+  padding-right: 50px;
+  border: solid;
+}
+
+.property-41 {
+  padding-top: 50px;
+  border: solid;
+}
+
+.property-42 {
+  padding: 50px;
+  border: solid;
+}
+
+.property-43 {
+  height: 80px;
+  overflow: scroll;
+}
+
+.property-44-parend {
+  position: relative;
+  background-color: red;
+  width: 100px;
+  height: 50px;
+}
+
+.property-44-child {
+  position: absolute;
+  background-color: blue;
+  top: 10px;
+  left: 10px;
+  width: 100px;
+  height: 50px;
+}
+
+.property-45 {
+  text-align: end;
+}
+
+.property-46 {
+  text-decoration: underline;
+}
+
+.property-47 {
+  text-indent: 30%;
+}
+
+.property-48 {
+  vertical-align: middle;
+}
+
+.property-49 {
+  visibility: hidden;
+}
+
+.property-50-parent {
+  position: relative;
+  margin-bottom: 10px;
+}
+
+.property-50-child-1 {
+  position: relative;
+  background-color: red;
+  width: 100px;
+  height: 50px;
+  z-index: 2;
+}
+
+.property-50-child-2 {
+  position: absolute;
+  background-color: blue;
+  top: 10px;
+  left: 10px;
+  width: 100px;
+  height: 50px;
+  z-index: 1;
+}
+
+.pseudo-class-1:hover {
+  background-color: red;
+}
+
+.pseudo-class-2:focus {
+  background-color: red;
+}
+
+.pseudo-class-3 input:checked + label {
+  background-color: red;
+}
+
+.pseudo-class-4 p:first-child {
+  background-color: red;
+}
+
+.pseudo-class-5 p:first-of-type {
+  background-color: red;
+}
+
+.pseudo-class-6 p:last-child {
+  background-color: red;
+}
+
+.pseudo-class-7 p:not(:last-child) {
+  background-color: red;
+}
+
+.pseudo-class-8 p:nth-child(odd) {
+  background-color: red;
+}
+
+.pseudo-class-9 button:active {
+  color: red;
+}
+
+.pseudo-element-1 span::after {
+  content: "after";
+  background-color: red;
+}
+
+.pseudo-element-2 span::before {
+  content: "before";
+  background-color: red;
+}
