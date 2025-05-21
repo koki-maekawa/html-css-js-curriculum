@@ -1,0 +1,177 @@
+@charset "UTF-8";
+
+body {
+  font-family: helvetica;
+}
+
+/* ------ header ------ */
+.header {
+  padding: 20px 0px;
+  display: flex;
+  justify-content: space-between;
+  width: 65%;
+  margin: auto;
+}
+
+.header__title {
+  font-size: 20px;
+}
+
+/* ------ menu ------ */
+.menu {
+  list-style: none;
+  display: flex;
+}
+
+.menu__link {
+  padding: 0px 10px;
+}
+
+/* ------ top ------ */
+.top {
+  width: 100%;
+  height: 500px;
+  background-color: green;
+  position: relative;
+  margin-bottom: 30px;
+}
+
+.top__title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  font-size: 1.7rem;
+  color: #fff;
+}
+
+/* ------ service ------ */
+.section {
+  width: 65%;
+  margin: 70px auto;
+}
+
+.section__title {
+  text-align: center;
+  padding: 10px 0;
+  font-size: 1.3rem;
+  padding-top: 20px;
+}
+
+/* ------ details ------ */
+.detail-list {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.detail {
+  margin: 10px 0px;
+  padding: 10px 0px;
+}
+
+.first-detail {
+  background-color: rgb(196, 242, 251);
+}
+
+.second-detail {
+  background-color: rgb(247, 232, 175);
+}
+
+.third-detail {
+  background-color: rgb(196, 242, 251);
+}
+
+/* ------ plan ------ */
+.plan-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.plan {
+  width: 25%;
+}
+
+.plan__title {
+  text-align: center;
+  color: #fff;
+  margin: 10px 0px;
+  padding: 10px 0;
+}
+
+.plan__free-title {
+  background-color: gray;
+}
+
+.plan__standard-title {
+  background-color: red;
+}
+
+.plan__plemium-title {
+  background-color: blue;
+}
+
+/* ------ footer ------ */
+.footer {
+  height: 70px;
+  width: 100%;
+  background-color: green;
+}
+
+@media screen and (max-width: 375px) {
+  /* ------ header ------ */
+  .header {
+    width: 80%;
+  }
+
+  .header {
+    flex-wrap: wrap;
+  }
+
+  .header__title,
+  .nav {
+    width: 100%;
+  }
+
+  /* ------ menu ------ */
+  .menu {
+    justify-content: space-between;
+  }
+
+  .menu__link {
+    padding: 20px 0px;
+  }
+
+  /* ------ top ------ */
+  .top__title {
+    font-size: 1.3rem;
+  }
+
+  /* ------ details ------ */
+  .detail__title {
+    font-size: 0.8rem;
+  }
+
+  .detail__paragraph {
+    font-size: 0.6rem;
+  }
+
+  /* ------ plan ------ */
+  .plan-list {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .plan {
+    width: 100%;
+  }
+
+  .plan__title {
+    font-size: 0.8rem;
+  }
+
+  .plan__paragraph {
+    font-size: 0.6rem;
+  }
+}
