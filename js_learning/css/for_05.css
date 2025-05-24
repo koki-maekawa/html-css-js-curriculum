@@ -1,0 +1,41 @@
+th,
+td {
+  border: 1px solid rgb(160 160 160);
+  padding: 8px 0;
+}
+
+.number-td {
+  text-align: center;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  border: 2px solid rgb(140 140 140);
+  font-size: 0.8rem;
+  letter-spacing: 1px;
+}
+
+.paticipant-list {
+  width: 400px;
+}
+
+.paticipant-table__number {
+  width: 30px;
+}
+
+.paticipant-table__age {
+  background-color: red;
+}
+
+.paticipant-table__address {
+  background-color: orange;
+}
+
+.paticipant-button {
+  margin: 10px auto;
+  padding: 5px;
+  width: 30%;
+  text-align: center;
+  background-color: lightgrey;
+}
