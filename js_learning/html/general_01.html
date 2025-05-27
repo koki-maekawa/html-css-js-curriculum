@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <title>JavaScriptの学習</title>
+  </head>
+
+  <body>
+    <div id="signUpForm">
+      <div id="nameForm">
+        <lavel>名前</lavel><br />
+        <input type="text" id="nameInput" />
+      </div>
+      <div id="userNameForm">
+        <lavel>ユーザーネーム</lavel><br />
+        <input type="text" id="userNameInput" />
+      </div>
+      <div id="emailForm">
+        <lavel>メアド</lavel><br />
+        <input type="email" id="emailInput" />
+      </div>
+      <div id="passwordForm">
+        <lavel>パスワード</lavel><br />
+        <input type="password" id="passwordInput" />
+      </div>
+      <div id="confirmPasswordForm">
+        <lavel>パスワード確認</lavel><br />
+        <input type="password" id="confirmPasswordInput" />
+      </div>
+      <div id="postCodeForm">
+        <lavel>郵便番号</lavel><button id="postCodeSearch">検索</button><br />
+        <input type="text" placeholder="7桁ハイフンなし" id="postCodeInput" />
+      </div>
+      <div id="addressForm">
+        <lavel>住所</lavel><br />
+        <input type="text" placeholder="都道府県" id="prefectureInput" /><br />
+        <input type="text" placeholder="区 or 市" id="wardOrCityInput" /><br />
+        <input type="text" placeholder="番地" id="addressInput" />
+      </div>
+      <div>
+        <button id="formButton" type="submit">登録</button>
+      </div>
+    </div>
+    <script type="text/javascript" src="../js/general_01.js"></script>
+  </body>
+</html>
