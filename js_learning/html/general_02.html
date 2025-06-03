@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css" />
+    <link rel="stylesheet" href="../css/general_02.css" />
+    <title>JavaScriptの学習</title>
+  </head>
+
+  <body class="post-page">
+    <h3 class="section-title">新規投稿</h3>
+    <div id="postForm" class="post-form">
+      <div id="titleForm" class="form-control">
+        <label>タイトル</label><br />
+        <input id="titleInput" class="title-input" type="text" />
+      </div>
+      <div id="contentForm" class="form-control">
+        <label>内容</label><br />
+        <textarea id="contentInput" class="content-input"></textarea>
+      </div>
+      <div class="form-control">
+        <button type="submit" id="formButton" class="form-button" disabled>
+          投稿ボタン
+        </button>
+      </div>
+    </div>
+    <h3 class="section-title">投稿済みの記事一覧</h3>
+    <div id="postIndex" class="post-index hidden">
+      <div id="postIndexTitle">
+        <h4>タイトル</h4>
+        <p id="postIndexTitleParagraph"></p>
+        <input type="text" id="updateTitleInput" class="title-input hidden" />
+      </div>
+      <div id="postIndexContent">
+        <h4>記事内容</h4>
+        <p id="postIndexContentParagraph"></p>
+        <textarea
+          id="updateContentInput"
+          class="content-input hidden"
+        ></textarea>
+      </div>
+      <div id="postIndexId" class="hidden">
+        <p id="postIndexIdParagraph"></p>
+        <input type="text" id="updateIdInput" class="id-input" />
+      </div>
+      <div id="indexButtons" class="index-buttons">
+        <!-- 記事一覧表示時に表示 -->
+        <button
+          type="submit"
+          id="updateButton"
+          class="index-button update-button"
+        >
+          編集
+        </button>
+        <button
+          type="submit"
+          id="deleteButton"
+          class="index-button delete-button"
+        >
+          削除
+        </button>
+
+        <!-- 編集モード時に表示 -->
+        <button
+          type="submit"
+          id="updateSubmitButton"
+          class="index-button hidden"
+        >
+          更新
+        </button>
+        <button type="submit" id="cancelButton" class="index-button hidden">
+          キャンセル
+        </button>
+      </div>
+    </div>
+
+    <!-- 編集モーダル -->
+    <div id="modalUpdate" class="modal">
+      <div class="modal-container">
+        <div class="modal-content">
+          <button id="modalUpdateClose" class="modal-close">×</button>
+          <h4>タイトル</h4>
+          <p id="modalUpdateTitle"></p>
+          <h4>内容</h4>
+          <p id="modalUpdateContent"></p>
+          <p id="modalUpdateId" class="hidden"></p>
+          <button type="submit" id="modalUpdateButton" class="form-button">
+            OK
+          </button>
+        </div>
+      </div>
+    </div>
+    
+    <!-- 削除モーダル -->
+    <div id="modalDelete" class="modal">
+      <div class="modal-container">
+        <div class="modal-content">
+          <button id="modalDeleteClose" class="modal-close">×</button>
+          <h4>タイトル</h4>
+          <p id="modalDeleteTitle"></p>
+          <h4>内容</h4>
+          <p id="modalDeleteContent"></p>
+          <p id="modalDeleteId" class="hidden"></p>
+          <button type="submit" id="modalDeleteButton" class="form-button">
+            OK
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <script type="text/javascript" src="../js/general_02.js"></script>
+  </body>
+</html>
