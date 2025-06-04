@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css" />
+    <link rel="stylesheet" href="../css/general_03.css" />
+    <title>JavaScriptの学習</title>
+  </head>
+
+  <body class="body">
+    <div class="container">
+      <div id="opponentArea" class="area">
+        <h1 class="area__title">相手手札</h1>
+        <div id="opponentCards" class="area__cards"></div>
+        <p class="area__sum-title">
+          現在の合計値(相手)<span id="opponentSum" class="area__sum">0</span>
+        </p>
+      </div>
+
+      <div class="area">
+        <div class="buttons">
+          <button id="gameStartButton" class="button">ゲームスタート</button>
+          <button id="gameResetButton" class="button">リセット</button>
+        </div>
+        <img src="../css/assets/card_back.png" class="card" />
+      </div>
+
+      <div id="myArea" class="area">
+        <h1 class="area__title">自分手札</h1>
+        <div id="myCards" class="area__cards"></div>
+        <p class="area__sum-title">
+          現在の合計値(自分)<span id="mySum" class="area__sum">0</span>
+        </p>
+        <div class="buttons">
+          <button id="addMyCardButton" class="button" disabled>追加</button>
+          <button id="noAddMyCardButton" class="button" disabled>追加しない</button>
+        </div>
+      </div>
+    </div>
+
+    <script type="text/javascript" src="../js/general_03.js"></script>
+  </body>
+</html>
